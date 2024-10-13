@@ -49,4 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+
+    // Function to set the active tab
+    function setActiveTab() {
+        const currentPage = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    // Call setActiveTab when the page loads
+    document.addEventListener('DOMContentLoaded', setActiveTab);
 });

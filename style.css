@@ -138,3 +138,38 @@ button:hover {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/* Add this to highlight the active tab */
+nav ul li a.active {
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Update table styles for better visibility in dark mode */
+.dark-mode table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #444;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.dark-mode th {
+    background-color: #333;
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.dark-mode tr:hover {
+    background-color: #3a3a3a;
+}
