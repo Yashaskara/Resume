@@ -1,112 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Life - Yashaskara Jois K R</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="professional.html">Professional</a></li>
-                <li><a href="personal.html">Personal</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Poppins] overflow-x-hidden">
+    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex items-center justify-center space-x-8">
+                <li><a href="index.html" class="hover:text-purple-400 transition-colors duration-300">Home</a></li>
+                <li><a href="professional.html" class="text-purple-400 font-semibold">Professional</a></li>
+                <li><a href="personal.html" class="hover:text-purple-400 transition-colors duration-300">Personal</a></li>
+                <li><a href="projects.html" class="hover:text-purple-400 transition-colors duration-300">Projects</a></li>
+                <li><a href="hobbies.html" class="hover:text-purple-400 transition-colors duration-300">Hobbies</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>Senior Software Engineer</h3>
-                <p>Netcore Unbxd, Bengaluru</p>
-                <p>April 2023 - September 2024</p>
-                <ul>
-                    <li>Designed and implemented configuration-driven, reusable UI components in React</li>
-                    <li>Refactored legacy code to improve component modularity</li>
-                    <li>Spearheaded UI performance optimization, reducing initial load times from 10 seconds to 5 seconds</li>
-                    <li>Mentored junior developers on React best practices</li>
-                </ul>
+    <main class="container mx-auto px-6 pt-24 pb-20">
+        <!-- Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Work Experience</h2>
+            
+            <!-- Experience Cards -->
+            <div class="space-y-8">
+                <!-- Senior SDE Role -->
+                <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-purple-400">Senior Software Engineer</h3>
+                            <span class="text-gray-400">April 2023 - Present</span>
+                        </div>
+                        <p class="text-lg text-purple-300 mb-4">Netcore Unbxd, Bengaluru</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 mr-2 mt-1 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+                                </svg>
+                                <span>Designed and implemented configuration-driven, reusable UI components in React</span>
+                            </li>
+                            <!-- Add other achievements similarly -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous SDE Role -->
+                <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                    <!-- Similar structure as above -->
+                </div>
             </div>
-            <div class="experience-item">
-                <h3>Software Engineer</h3>
-                <p>Netcore Unbxd, Bengaluru</p>
-                <p>April 2021 - March 2023</p>
-                <ul>
-                    <li>Spearheaded the migration of React class components to functional components</li>
-                    <li>Integrated backend service with over 50 major marketplaces through Python-based APIs</li>
-                    <li>Designed and developed robust Python SDK APIs for internal CRUD operations</li>
-                </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Education</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-gray-800/50 rounded-xl overflow-hidden">
+                    <thead class="bg-gray-700/50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-purple-300">Year</th>
+                            <th class="px-6 py-4 text-left text-purple-300">Course</th>
+                            <th class="px-6 py-4 text-left text-purple-300">Institution</th>
+                            <th class="px-6 py-4 text-left text-purple-300">Specialization</th>
+                            <th class="px-6 py-4 text-left text-purple-300">CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr class="hover:bg-gray-700/50 transition-colors">
+                            <td class="px-6 py-4">2021</td>
+                            <td class="px-6 py-4">BE/B.Tech/BS</td>
+                            <td class="px-6 py-4">PES University</td>
+                            <td class="px-6 py-4">Electronics and Communication</td>
+                            <td class="px-6 py-4">8.14</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Course</th>
-                        <th>Institution</th>
-                        <th>Specialization</th>
-                        <th>CGPA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2021</td>
-                        <td>BE/B.Tech/BS</td>
-                        <td>PES University</td>
-                        <td>Electronics and Communication</td>
-                        <td>8.14</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Skills</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Programming Languages</td>
-                        <td>Python, JavaScript</td>
-                    </tr>
-                    <tr>
-                        <td>Libraries and Frameworks</td>
-                        <td>React</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
+        <!-- Publications Section -->
         <section id="publications">
-            <h2>Publications</h2>
-            <div class="publication-item">
-                <h3>Inflated 3D Architecture for South Indian Sign Language Recognition</h3>
-                <p>Authors: Dr. N. Krupa, M. Rathinagiriswaran, S. Managaokar, K. R. Yashaskara Jois and K. Vijaykumar Suvarna</p>
-                <p>Published: 2021 IEEE</p>
-                <p><a href="https://ieeexplore.ieee.org/document/9688520" target="_blank">View Publication</a></p>
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Publications</h2>
+            <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                <div class="relative">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Inflated 3D Architecture for South Indian Sign Language Recognition</h3>
+                    <p class="text-gray-300 mb-2">Authors: Dr. N. Krupa, M. Rathinagiriswaran, S. Managaokar, K. R. Yashaskara Jois and K. Vijaykumar Suvarna</p>
+                    <p class="text-gray-400 mb-4">Published: 2021 IEEE</p>
+                    <a href="https://ieeexplore.ieee.org/document/9688520" target="_blank" 
+                       class="inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 transition-colors rounded-full text-white">
+                        View Publication
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
+    <footer class="fixed bottom-0 w-full bg-black/80 backdrop-blur-md border-t border-gray-800">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

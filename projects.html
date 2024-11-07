@@ -1,50 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Yashaskara Jois K R</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="professional.html">Professional</a></li>
-                <li><a href="personal.html">Personal</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Poppins]">
+    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex items-center justify-center space-x-8">
+                <li><a href="index.html" class="hover:text-purple-400 transition-colors duration-300">Home</a></li>
+                <li><a href="professional.html" class="hover:text-purple-400 transition-colors duration-300">Professional</a></li>
+                <li><a href="personal.html" class="hover:text-purple-400 transition-colors duration-300">Personal</a></li>
+                <li><a href="projects.html" class="text-purple-400 font-semibold">Projects</a></li>
+                <li><a href="hobbies.html" class="hover:text-purple-400 transition-colors duration-300">Hobbies</a></li>
+                <li><a href="contact.html" class="hover:text-purple-400 transition-colors duration-300">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-item">
-                <h3>Real Time Conversion of Sign Language to Speech</h3>
-                <ul>
-                    <li>Extracted key features from videos using Motion History Imaging and Optical Flow techniques</li>
-                    <li>Achieved 87% accuracy in converting videos to English text by training on the I3D model</li>
-                    <li>Applied stratified K-fold cross-validation to enhance model performance</li>
-                    <li>Developed a Django web application in Python to host and showcase the project</li>
-                </ul>
-                <p>Technologies: Python, Django, Machine Learning, Computer Vision</p>
-            </div>
-            <div class="project-item">
-                <h3>Marketplace Integration</h3>
-                <p>Integrated backend service with over 50 major marketplaces, including Amazon, Shopify, and Magento, through Python-based APIs. This resulted in a 200% increase in customer traction and engagement.</p>
-                <p>Technologies: Python, API Development</p>
+    <main class="container mx-auto px-6 pt-24 pb-20">
+        <section id="projects" class="space-y-12">
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Featured Projects</h2>
+            
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Project 1 -->
+                <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 text-purple-400">Real Time Sign Language to Speech</h3>
+                        <ul class="space-y-3 mb-6 text-gray-300">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+                                </svg>
+                                Extracted key features using Motion History Imaging
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+                                </svg>
+                                87% accuracy in video-to-text conversion
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm bg-purple-900/50 rounded-full text-purple-300">Python</span>
+                            <span class="px-3 py-1 text-sm bg-purple-900/50 rounded-full text-purple-300">Django</span>
+                            <span class="px-3 py-1 text-sm bg-purple-900/50 rounded-full text-purple-300">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative">
+                        <h3 class="text-2xl font-bold mb-4 text-purple-400">Marketplace Integration</h3>
+                        <p class="text-gray-300 mb-6">Integrated backend service with over 50 major marketplaces, resulting in 200% increase in customer engagement.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-sm bg-purple-900/50 rounded-full text-purple-300">Python</span>
+                            <span class="px-3 py-1 text-sm bg-purple-900/50 rounded-full text-purple-300">API Development</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
+    <footer class="fixed bottom-0 w-full bg-black/80 backdrop-blur-md border-t border-gray-800">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

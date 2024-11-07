@@ -1,67 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies - Yashaskara Jois K R</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="professional.html">Professional</a></li>
-                <li><a href="personal.html">Personal</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Poppins] overflow-x-hidden">
+    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex items-center justify-center space-x-8">
+                <li><a href="index.html" class="hover:text-purple-400 transition-colors duration-300">Home</a></li>
+                <li><a href="professional.html" class="hover:text-purple-400 transition-colors duration-300">Professional</a></li>
+                <li><a href="personal.html" class="hover:text-purple-400 transition-colors duration-300">Personal</a></li>
+                <li><a href="projects.html" class="hover:text-purple-400 transition-colors duration-300">Projects</a></li>
+                <li><a href="hobbies.html" class="text-purple-400 font-semibold">Hobbies</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="biking">
-            <h2>Biking</h2>
-            <p>I'm a passionate biker with a love for adventure and challenging rides. My most notable biking achievement includes:</p>
-            <ul>
-                <li>Successfully completing the Ladakh circuit, an epic journey through the breathtaking Himalayan landscapes</li>
-                <li>Regular participation in long-distance riding events</li>
-                <li>Exploring diverse terrains, from mountain trails to scenic highways</li>
-            </ul>
-        </section>
+    <main class="container mx-auto px-6 pt-24 pb-20">
+        <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">My Hobbies</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Chess Card -->
+            <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                <div class="relative space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-purple-300">Chess</h3>
+                    </div>
+                    <p class="text-gray-300">Passionate about strategic thinking and problem-solving through chess.</p>
+                </div>
+            </div>
 
-        <section id="chess">
-            <h2>Chess</h2>
-            <p>Chess has been more than just a hobby for me; it's been a journey of competitive excellence. My chess achievements include:</p>
-            <ul>
-                <li>Former national level chess player, representing my region in prestigious tournaments</li>
-                <li>State Under-19 Chess Champion, a title that reflects years of dedication and strategic thinking</li>
-                <li>Continued participation in chess clubs and online tournaments to maintain my skills</li>
-            </ul>
-        </section>
-        <section id="cricket">
-            <h2>Cricket</h2>
-            <p>Cricket has been an integral part of my life since childhood. My current involvement in the sport includes:</p>
-            <ul>
-                <li>Playing as a weekend cricketer in local leagues and friendly matches</li>
-            </ul>
-        </section>
-
-        <section id="other-hobbies">
-            <h2>Other Interests</h2>
-            <ul>
-                <li>Reading books on strategy, technology, and personal development</li>
-                <li>Exploring nature through hiking and outdoor photography</li>
-                <li>Engaging in fitness activities to maintain physical and mental well-being</li>
-            </ul>
-        </section>
+            <!-- Add more hobby cards with similar structure -->
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Yashaskara Jois K R. All rights reserved.</p>
+    <footer class="fixed bottom-0 w-full bg-black/80 backdrop-blur-md border-t border-gray-800">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
