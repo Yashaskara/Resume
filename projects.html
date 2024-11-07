@@ -30,6 +30,40 @@
                 <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
                     <div class="relative">
+                        <!-- <div class="relative mb-6 rounded-xl overflow-hidden h-64"> -->
+                            <!-- Carousel container -->
+                            <!-- <div class="flex transition-transform duration-500 ease-out" id="carousel1">
+                                <img class="min-w-full h-64 object-cover" src="project1-slide1.jpg" alt="Project Screenshot 1" 
+                                     onerror="this.src='https://placehold.co/800x400?text=Project+Screenshot+1'">
+                                <img class="min-w-full h-64 object-cover" src="project1-slide2.jpg" alt="Project Screenshot 2"
+                                     onerror="this.src='https://placehold.co/800x400?text=Project+Screenshot+2'">
+                                <img class="min-w-full h-64 object-cover" src="project1-slide3.jpg" alt="Project Screenshot 3"
+                                     onerror="this.src='https://placehold.co/800x400?text=Project+Screenshot+3'">
+                            </div> -->
+                            <!-- Carousel Controls -->
+                            <!-- <div class="absolute inset-0 flex items-center justify-between p-4">
+                                <button onclick="moveSlide('carousel1', -1)" 
+                                        class="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                    </svg>
+                                </button>
+                                <button onclick="moveSlide('carousel1', 1)"
+                                        class="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </div> -->
+                            <!-- Carousel Indicators -->
+                            <!-- <div class="absolute bottom-4 right-0 left-0">
+                                <div class="flex items-center justify-center gap-2">
+                                    <div class="w-2 h-2 rounded-full bg-white transition-all duration-500 ease-in-out"></div>
+                                    <div class="w-2 h-2 rounded-full bg-white/50 transition-all duration-500 ease-in-out"></div>
+                                    <div class="w-2 h-2 rounded-full bg-white/50 transition-all duration-500 ease-in-out"></div>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
                         <h3 class="text-2xl font-bold mb-4 text-purple-400">Real Time Sign Language to Speech</h3>
                         <ul class="space-y-3 mb-6 text-gray-300">
                             <li class="flex items-center">
@@ -74,5 +108,32 @@
             <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+    function moveSlide(carouselId, direction) {
+        const carousel = document.getElementById(carouselId);
+        const slides = carousel.children.length;
+        let currentSlide = parseInt(carousel.dataset.currentSlide || 0);
+        
+        currentSlide = (currentSlide + direction + slides) % slides;
+        carousel.dataset.currentSlide = currentSlide;
+        
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        // Update indicators
+        const indicators = carousel.parentElement.querySelectorAll('.bottom-4 .rounded-full');
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('bg-white', index === currentSlide);
+            indicator.classList.toggle('bg-white/50', index !== currentSlide);
+        });
+    }
+
+    // Auto-advance slides every 5 seconds
+    setInterval(() => {
+        document.querySelectorAll('[id^="carousel"]').forEach(carousel => {
+            moveSlide(carousel.id, 1);
+        });
+    }, 5000);
+    </script>
 </body>
 </html>
