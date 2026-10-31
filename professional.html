@@ -20,42 +20,79 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-6 pt-24 pb-20">
-        <!-- Experience Section -->
+    <main class="container mx-auto px-6 pt-24 pb-24">
         <section id="experience" class="mb-16">
             <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Work Experience</h2>
-            
-            <!-- Experience Cards -->
             <div class="space-y-8">
-                <!-- Senior SDE Role -->
                 <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
                     <div class="relative">
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex flex-wrap items-center justify-between mb-4 gap-2">
                             <h3 class="text-2xl font-bold text-purple-400">Senior Software Engineer</h3>
-                            <span class="text-gray-400">April 2023 - Present</span>
+                            <span class="text-gray-400">Jan 2025 - Present</span>
                         </div>
                         <p class="text-lg text-purple-300 mb-4">Netcore Unbxd, Bengaluru</p>
                         <ul class="space-y-3 text-gray-300">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 mr-2 mt-1 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-                                </svg>
-                                <span>Designed and implemented configuration-driven, reusable UI components in React</span>
-                            </li>
-                            <!-- Add other achievements similarly -->
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Led the design and development of a multi-tenant Model Context Protocol (MCP) server that lets AI agents operate Unbxd's e-commerce search and merchandising dashboard: 100+ tools across analytics, merchandising, customer segments, ranking algorithms, and live search preview. Live with 3 customers (1,000+ tool calls), with Unbxd plugins in development on top for agent clients.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Designed tenant-isolated security with OAuth 2.1 and JWT tokens bound to each retailer's site; credentials come from the verified token, never from model-supplied inputs, so an agent cannot reach another customer's data.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Built a convention-based tool framework (one typed Python file per tool, with authentication, error handling, and logging inherited) and a shared merchandising engine for four rule types with versioned campaigns and bulk CSV/JSONL upload.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Added agent-safety guardrails and an evaluation harness: forced clarification instead of guessed IDs, response-size caps, and automated tool-selection testing.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Designed and built an LLM-as-judge framework that scores AI-generated product attributes from 1 to 5 against the rules each enrichment step must follow; simplified the pipeline by measuring each stage, cutting contradictory findings from 6 to 0.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Spearheaded AI-assisted customer onboarding with reusable agent skills and small automation agents, cutting typical onboarding from 3 to 6 months to about 1 week.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Built an analytics validation agent with Playwright MCP that checks customer storefronts for correct tracking selectors.</span></li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Previous SDE Role -->
                 <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
-                    <!-- Similar structure as above -->
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative">
+                        <div class="flex flex-wrap items-center justify-between mb-4 gap-2">
+                            <h3 class="text-2xl font-bold text-purple-400">Lead Full Stack Developer (Founding Engineer)</h3>
+                            <span class="text-gray-400">Oct 2024 - Jan 2025</span>
+                        </div>
+                        <p class="text-lg text-purple-300 mb-4">SaaStify, Bengaluru</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Founding engineer of an AI-era startup: designed and built a full-stack Master Data Management (MDM) platform for products, categories, and digital assets for e-commerce sellers, with a TypeScript and React UI and secure REST APIs.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Built integrations with Shopify, Amazon, and eBay using Node.js and Python APIs, enabling real-time synchronized data flow across platforms.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Designed GCP-based database architecture for structured and unstructured data at scale and managed digital asset workflows on GCP Storage.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative">
+                        <div class="flex flex-wrap items-center justify-between mb-4 gap-2">
+                            <h3 class="text-2xl font-bold text-purple-400">Senior Software Engineer</h3>
+                            <span class="text-gray-400">Mar 2023 - Sep 2024</span>
+                        </div>
+                        <p class="text-lg text-purple-300 mb-4">Netcore Unbxd, Bengaluru</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Owned the onboarding of Asian Paints (150,000 SKUs): ran customer calls several days a week for 6+ months to understand how their product data was scattered across multiple Excel sheets, designed a unified data model, and wrote ingestion scripts that automated catalog updates whenever new SKUs were created, improving search performance and data management.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>The cleaned, standardized catalog later made AI-based attribute enrichment straightforward to adopt on the account and simplified downstream analytics.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Led a page performance initiative that cut load time by 50% (10s to 5s, measured with Lighthouse) using code splitting, lazy loading, and memoization.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <div class="relative">
+                        <div class="flex flex-wrap items-center justify-between mb-4 gap-2">
+                            <h3 class="text-2xl font-bold text-purple-400">Software Engineer</h3>
+                            <span class="text-gray-400">Jul 2021 - Mar 2023</span>
+                        </div>
+                        <p class="text-lg text-purple-300 mb-4">Netcore Unbxd, Bengaluru</p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Built a generic Python integration framework that Amazon, Shopify, and other marketplace connectors were built on, covering 50+ connectors today and removing manual data entry for customers.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 mr-2 mt-1 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg><span>Built an internal Python SDK with reusable CRUD operations and utility APIs, standardizing internal workflows.</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
         <section id="education" class="mb-16">
             <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Education</h2>
             <div class="overflow-x-auto">
@@ -82,7 +119,6 @@
             </div>
         </section>
 
-        <!-- Publications Section -->
         <section id="publications">
             <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Publications</h2>
             <div class="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 border border-gray-800">
@@ -91,12 +127,9 @@
                     <h3 class="text-2xl font-bold mb-4 text-purple-400">Inflated 3D Architecture for South Indian Sign Language Recognition</h3>
                     <p class="text-gray-300 mb-2">Authors: Dr. N. Krupa, M. Rathinagiriswaran, S. Managaokar, K. R. Yashaskara Jois and K. Vijaykumar Suvarna</p>
                     <p class="text-gray-400 mb-4">Published: 2021 IEEE</p>
-                    <a href="https://ieeexplore.ieee.org/document/9688520" target="_blank" 
+                    <a href="https://ieeexplore.ieee.org/document/9688520" target="_blank"
                        class="inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 transition-colors rounded-full text-white">
                         View Publication
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                        </svg>
                     </a>
                 </div>
             </div>
@@ -105,7 +138,7 @@
 
     <footer class="fixed bottom-0 w-full bg-black/80 backdrop-blur-md border-t border-gray-800">
         <div class="container mx-auto px-6 py-4 text-center text-gray-400">
-            <p>&copy; 2024 Yashaskara Jois K R. All rights reserved.</p>
+            <p>&copy; 2026 Yashaskara Jois K R. All rights reserved.</p>
         </div>
     </footer>
 </body>
